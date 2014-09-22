@@ -1,0 +1,81 @@
+.wrap{
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	background-color: #DDDDDD; 
+	padding: 60px;
+	margin-bottom: 20px;
+	border: solid 1px;
+	border-radius: 10px;
+	box-shadow: ;
+}
+
+
+.container{
+	margin-top: 0px;
+
+}
+
+.header{
+	font-family: 'Lobster', cursive;
+	font-size: 35px;
+	color: #0a5175;
+	display: table;
+	height: 60px;
+	width: 100%;
+	background: url('../img/logo.png') no-repeat center top fixed; 
+}
+
+.top-bar .name h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.my-modal{
+position: relative !important;
+font-size: 12px !important;
+} 
+
+.wysiwyg-color-black{
+	color: black !important;
+}
+
+.wysiwyg-color-silver{
+	color: silver !important;
+}
+
+.wysiwyg-color-grey{
+	color: grey !important;
+}
+
+.wysiwyg-color-maroon{
+	color: maroon !important;
+}
+
+.wysiwyg-color-red{
+	color: red !important;
+}
+
+.wysiwyg-color-purple{
+	color: purple !important;
+}
+
+.wysiwyg-color-green{
+	color: green !important;
+}
+
+.wysiwyg-color-olive{
+	color: olive !important;
+}
+
+.wysiwyg-color-navy{
+	color: navy !important;
+}
+
+.wysiwyg-color-blue{
+	color: blue !important;
+}
+
+.wysiwyg-color-orange{
+	color: orange !important;
+}

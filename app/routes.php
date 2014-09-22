@@ -13,5 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('rfc');
+});
+
+Route::post('/', function()
+{
+	return View::make('rfc');	
 });
