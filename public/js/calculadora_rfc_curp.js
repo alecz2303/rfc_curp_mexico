@@ -619,270 +619,8 @@
         }
         return homonimio;
     }
-  /*  
-    function obtieneRFC(forma, pstRFC){
-        with (forma) {
-            var fecha = dsFechaNac.value;
-            var sexo = idSexo.value;
-            var estado = idEstadoNac.value;
-            var nombre = dsNombre.value;
-            var paterno = dsPaterno.value;
-            var materno = dsMaterno.value;  
-        }
-        
-        fecha = fecha.substring(6)+"-"+fecha.substring(3,5)+"-"+fecha.substring(0,2);
-        
-        if (sexo == 1){
-            sexo = "H";
-        } 
-        if (sexo == 2){
-            sexo = "M";
-        }
-        switch (estado){
-            case "1":
-            estado = "AS";
-            break;
-            case "2":
-            estado = "BC";
-            break;
-            case "3":
-            estado = "BS";
-            break;
-            case "4":
-            estado = "CC";
-            break;
-            case "5":
-            estado = "CS";
-            break;
-            case "6":
-            estado = "CH";
-            break;
-            case "7":
-            estado = "CL";
-            break;
-            case "8":
-            estado = "CM";
-            break;
-            case "9":
-            estado = "DF";
-            break;
-            case "10":
-            estado = "DG";
-            break;
-            case "11":
-            estado = "GT";
-            break;
-            case "12":
-            estado = "GR";
-            break;
-            case "13":
-            estado = "HG";
-            break;
-            case "14":
-            estado = "JC";
-            break;
-            case "15":
-            estado = "MC";
-            break;
-            case "16":
-            estado = "MN";
-            break;
-            case "17":
-            estado = "MS";
-            break;
-            case "18":
-            estado = "NT";
-            break;
-            case "19":
-            estado = "NL";
-            break;
-            case "20":
-            estado = "OC";
-            break;
-            case "21":
-            estado = "PL";
-            break;
-            case "22":
-            estado = "QT";
-            break;
-            case "23":
-            estado = "QR";
-            break;
-            case "24":
-            estado = "SP";
-            break;
-            case "25":
-            estado = "SL";
-            break;
-            case "26":
-            estado = "SR";
-            break;
-            case "27":
-            estado = "TC";
-            break;
-            case "28":
-            estado = "TS";
-            break;
-            case "29":
-            estado = "TL";
-            break;
-            case "30":
-            estado = "VZ";
-            break;
-            
-            
-        }
-        pstRFC.value = fnCalculaCURP( nombre, paterno, materno, fecha, sexo, estado ).substring(0,10);
-    }
-function obtieneCURP(forma, pstCURP){
-        with (forma) {
-            var fecha = dsFechaNac.value;
-            var sexo = idSexo.value;
-            var estado = idEstadoNac.value;
-            var nombre = dsNombre.value;
-            var paterno = dsPaterno.value;
-            var materno = dsMaterno.value;  
-        }
-        
-        fecha = fecha.substring(6)+"-"+fecha.substring(3,5)+"-"+fecha.substring(0,2);
-        
-        if (sexo == 1){
-            sexo = "H";
-        } 
-        if (sexo == 2){
-            sexo = "M";
-        }
-        switch (estado){
-            case "1":
-            estado = "AS";
-            break;
-            case "2":
-            estado = "BC";
-            break;
-            case "3":
-            estado = "BS";
-            break;
-            case "4":
-            estado = "CC";
-            break;
-            case "5":
-            estado = "CS";
-            break;
-            case "6":
-            estado = "CH";
-            break;
-            case "7":
-            estado = "CL";
-            break;
-            case "8":
-            estado = "CM";
-            break;
-            case "9":
-            estado = "DF";
-            break;
-            case "10":
-            estado = "DG";
-            break;
-            case "11":
-            estado = "GT";
-            break;
-            case "12":
-            estado = "GR";
-            break;
-            case "13":
-            estado = "HG";
-            break;
-            case "14":
-            estado = "JC";
-            break;
-            case "15":
-            estado = "MC";
-            break;
-            case "16":
-            estado = "MN";
-            break;
-            case "17":
-            estado = "MS";
-            break;
-            case "18":
-            estado = "NT";
-            break;
-            case "19":
-            estado = "NL";
-            break;
-            case "20":
-            estado = "OC";
-            break;
-            case "21":
-            estado = "PL";
-            break;
-            case "22":
-            estado = "QT";
-            break;
-            case "23":
-            estado = "QR";
-            break;
-            case "24":
-            estado = "SP";
-            break;
-            case "25":
-            estado = "SL";
-            break;
-            case "26":
-            estado = "SR";
-            break;
-            case "27":
-            estado = "TC";
-            break;
-            case "28":
-            estado = "TS";
-            break;
-            case "29":
-            estado = "TL";
-            break;
-            case "30":
-            estado = "VZ";
-            break;
-            
-            
-        }
-        pstCURP.value = fnCalculaCURP( nombre, paterno, materno, fecha, sexo, estado );
-    }
-    */
+
 function fnCalculaCURP( pstNombre, pstPaterno, pstMaterno, dfecha, pstSexo, pnuCveEntidad ) {  
-/*
-pstNombre="MARIA TERESITA DEL NIÑO JESUS";
-pstPaterno="AGUERREBERE";
-pstMaterno="BARROSO";
-dfecha="1937-11-22";
-pstSexo = "M";
-pnuCveEntidad ="DF";
-
-pstNombre="ROCIO";
-pstPaterno="URIBARREN";
-pstMaterno="AGUERREBERE";
-dfecha="1969-02-03";
-pstSexo = "M";
-pnuCveEntidad ="DF";
-
-
-pstNombre="AINHOA";
-pstPaterno="ESTURAU";
-pstMaterno="URIBARREN";
-dfecha="2003-03-05";
-pstSexo = "M";
-pnuCveEntidad ="QR";
-
-
-
-
-pstNombre="ALEJANDRO";
-pstPaterno="RUEDA";
-pstMaterno="JIMENEZ";
-dfecha="1978-03-23";
-pstSexo = "H";
-pnuCveEntidad ="DF";
-*/
 
 pstCURP   ="";
 pstDigVer ="";
@@ -1102,10 +840,8 @@ VARLOOPS = 0;
 while (VARLOOPS != 1)
 {
 
-        //SET @APATERNO_LONGITUD = LEN(@APATERNO)
         APATERNO_LONGITUD = APATERNO.length;        
         
-        //SET @APATERNO1_LONGITUD = PATINDEX('% %',@APATERNO)
         var splitPaterno = APATERNO.split(" ");
         var splitPaterno1 = splitPaterno[0];
         APATERNO1_LONGITUD = splitPaterno1.length;
@@ -1114,24 +850,11 @@ while (VARLOOPS != 1)
            {
              APATERNO1_LONGITUD = APATERNO_LONGITUD;
            }
-//      APATERNO1 = RTRIM(LEFT(@APATERNO,@APATERNO1_LONGITUD))
-//      APATERNO2 = LTRIM(RIGHT(@APATERNO,@APATERNO_LONGITUD - @APATERNO1_LONGITUD))
 
         APATERNO1 =  APATERNO.substring(0,splitPaterno1.length);
         APATERNO2 =  APATERNO.substring(splitPaterno1.length + 1, APATERNO.length);
                 // Se quitan los sufijos
 
-/*
-IF @APATERNO1 IN ('DE','LA','LAS','MC','VON','DEL','LOS','Y','MAC','VAN') AND @APATERNO2 <> ''
-    BEGIN
-        SET @APATERNO = @APATERNO2
-    END 
-ELSE
-    BEGIN
-        SET @VARLOOPS = 1
-    END
-}
-*/
 
 if ( APATERNO1 == 'DE' && APATERNO2 != '')
     {
@@ -1259,17 +982,6 @@ while (VARLOOPS != 1)
 // Se quitan los sufijos
 
 
-/*
-IF @APATERNO1 IN ('DE','LA','LAS','MC','VON','DEL','LOS','Y','MAC','VAN') AND @APATERNO2 <> ''
-    BEGIN
-        SET @APATERNO = @APATERNO2
-    END 
-ELSE
-    BEGIN
-        SET @VARLOOPS = 1
-    END
-}
-*/
 
 if ( AMATERNO1 == 'DE' && AMATERNO2 != '')
     {
@@ -1426,16 +1138,6 @@ pstCURP = pstCURP + NOMBRES.substring(0,1);
 
 
 
-// Se agrega la fecha de nacimiento, clave del sexo y clave de la entidad
-/*
-var splitFecha = dfecha.split("-");
-var splitAnio  = splitFecha[0].substr(2,2);
-var splitMes   = splitFecha[1];
-var splitDia   = splitFecha[2];
-
-
-pstCURP = pstCURP + splitAnio + splitMes + splitDia + pstSexo + pnuCveEntidad
-*/
 pstCURP = pstCURP + dfecha + pstSexo + pnuCveEntidad;
 
 
@@ -1691,7 +1393,6 @@ while (contador1 <= 15)
 
 numVer  = sumatoria % 10;
 numVer  = Math.abs(10 - numVer);
-//anio = splitFecha[0];
 anio = dfecha.substr(2,2);
 
 
